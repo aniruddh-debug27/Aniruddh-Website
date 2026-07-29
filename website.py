@@ -28,6 +28,10 @@ def about():
 def projects():
     return render_template("projects.html")
 
+@app.route("/python")
+def python():
+    return render_template("python.html")
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
