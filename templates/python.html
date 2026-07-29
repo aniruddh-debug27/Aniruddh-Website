@@ -2,42 +2,368 @@
 
 {% block title %}Learn Python{% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='python.css') }}">
+{% endblock %}
+
 {% block content %}
 
-<div class="python-container">
+<div class="python-page">
 
     <div class="sidebar">
-        <h2>Python Course</h2>
 
-        <a href="#">Introduction</a>
-        <a href="#">Installation</a>
-        <a href="#">Variables</a>
-        <a href="#">Data Types</a>
-        <a href="#">Input & Output</a>
-        <a href="#">If Else</a>
-        <a href="#">Loops</a>
-        <a href="#">Functions</a>
-        <a href="#">Lists</a>
-        <a href="#">Projects</a>
+        <h2>🐍 Learn Python</h2>
+
+        <a href="#intro">1. Introduction</a>
+        <a href="#install">2. Installation</a>
+        <a href="#variables">3. Variables</a>
+        <a href="#datatypes">4. Data Types</a>
+        <a href="#operators">5. Operators</a>
+        <a href="#input">6. Input & Output</a>
+        <a href="#ifelse">7. If Else</a>
+        <a href="#loops">8. Loops</a>
+        <a href="#functions">9. Functions</a>
+        <a href="#lists">10. Lists</a>
+        <a href="#tuples">11. Tuples</a>
+        <a href="#dict">12. Dictionaries</a>
+        <a href="#sets">13. Sets</a>
+        <a href="#strings">14. Strings</a>
+        <a href="#files">15. File Handling</a>
+        <a href="#oop">16. OOP</a>
+        <a href="#modules">17. Modules</a>
+        <a href="#projects">18. Mini Projects</a>
 
     </div>
 
     <div class="content">
 
-        <h1>Learn Python</h1>
+        <section id="intro">
 
-        <p>
-            Welcome to the Python Course. Here you will learn Python
-            step by step with simple explanations and examples.
-        </p>
+            <h1>Python Introduction</h1>
 
-        <h2>Example</h2>
+            <p>
+                Python is one of the world's most popular programming
+                languages. It is easy to learn, powerful and used for
+                Web Development, Artificial Intelligence, Cyber Security,
+                Automation, Data Science and much more.
+            </p>
 
-        <pre>
+            <pre>
 print("Hello World")
-        </pre>
+            </pre>
 
-        <button>Next Lesson →</button>
+        </section>
+
+        <hr>
+
+        <section id="install">
+
+            <h1>Python Installation</h1>
+
+            <p>
+
+                Download Python from python.org
+
+                Install it.
+
+                During installation tick
+
+                ✓ Add Python to PATH
+
+                Then open CMD and type:
+
+            </p>
+
+            <pre>
+python --version
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="variables">
+
+            <h1>Variables</h1>
+
+            <p>
+
+                Variables are used to store data.
+
+            </p>
+
+            <pre>
+name = "Aniruddh"
+
+age = 17
+
+print(name)
+
+print(age)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="datatypes">
+
+            <h1>Data Types</h1>
+
+            <p>
+
+                Common Data Types:
+
+            </p>
+
+            <ul>
+
+                <li>String</li>
+
+                <li>Integer</li>
+
+                <li>Float</li>
+
+                <li>Boolean</li>
+
+                <li>List</li>
+
+                <li>Tuple</li>
+
+                <li>Dictionary</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <section id="operators">
+
+            <h1>Operators</h1>
+
+            <pre>
+a = 10
+
+b = 5
+
+print(a+b)
+
+print(a-b)
+
+print(a*b)
+
+print(a/b)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="input">
+
+            <h1>Input & Output</h1>
+
+            <pre>
+name = input("Enter Name : ")
+
+print("Hello",name)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="ifelse">
+
+            <h1>If Else</h1>
+
+            <pre>
+age = 18
+
+if age >=18:
+    print("Adult")
+
+else:
+    print("Child")
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="loops">
+
+            <h1>Loops</h1>
+
+            <pre>
+for i in range(1,6):
+
+    print(i)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="functions">
+
+            <h1>Functions</h1>
+
+            <pre>
+def hello():
+
+    print("Welcome")
+
+hello()
+            </pre>
+
+        </section>
+                <hr>
+
+        <section id="lists">
+
+            <h1>Lists</h1>
+
+            <p>Lists are used to store multiple values.</p>
+
+            <pre>
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+print(fruits[0])
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="tuples">
+
+            <h1>Tuples</h1>
+
+            <p>Tuples are ordered and cannot be changed.</p>
+
+            <pre>
+colors = ("Red", "Blue", "Green")
+
+print(colors)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="dict">
+
+            <h1>Dictionaries</h1>
+
+            <pre>
+student = {
+    "name":"Aniruddh",
+    "age":17
+}
+
+print(student["name"])
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="sets">
+
+            <h1>Sets</h1>
+
+            <pre>
+numbers = {1,2,3,4,5}
+
+print(numbers)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="strings">
+
+            <h1>Strings</h1>
+
+            <pre>
+text = "Hello World"
+
+print(text.upper())
+
+print(len(text))
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="files">
+
+            <h1>File Handling</h1>
+
+            <pre>
+file = open("demo.txt","w")
+
+file.write("Hello Python")
+
+file.close()
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="oop">
+
+            <h1>Object Oriented Programming</h1>
+
+            <pre>
+class Student:
+
+    def __init__(self,name):
+
+        self.name = name
+
+s = Student("Aniruddh")
+
+print(s.name)
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="modules">
+
+            <h1>Modules</h1>
+
+            <pre>
+import math
+
+print(math.sqrt(25))
+            </pre>
+
+        </section>
+
+        <hr>
+
+        <section id="projects">
+
+            <h1>Mini Projects</h1>
+
+            <ul>
+                <li>Calculator</li>
+                <li>Guess Number Game</li>
+                <li>Password Generator</li>
+                <li>To-Do App</li>
+                <li>Quiz Game</li>
+            </ul>
+
+        </section>
 
     </div>
 
