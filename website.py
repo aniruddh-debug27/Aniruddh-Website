@@ -36,5 +36,29 @@ def python():
 def contact():
     return render_template("contact.html")
 
+@app.route('/python-intro')
+def python_intro():
+    return render_template('python_intro.html')
+
+@app.route('/variables')
+def variables():
+    return render_template('variables.html')
+
+@app.route('/datatypes')
+def datatypes():
+    return render_template('datatypes.html')
+
+@app.route('/operators')
+def operators():
+    return render_template('operators.html')
+
+@app.route('/input-output')
+def input_output():
+    return render_template('input_output.html')
+
+@app.route('/if-else')
+def if_else():
+    return render_template('if_else.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
