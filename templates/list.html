@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="lesson">
+
+<h1>Python Lists</h1>
+
+<h2>What is a List?</h2>
+
+<p>
+A list is a collection of multiple values stored in a single variable.
+Lists are ordered and changeable.
+</p>
+
+<h2>Creating a List</h2>
+
+<pre>
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+</pre>
+
+
+<h2>Accessing List Items</h2>
+
+<pre>
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits[0])
+</pre>
+
+<p>
+Output: Apple
+</p>
+
+
+<h2>Adding Items</h2>
+
+<pre>
+fruits.append("Orange")
+</pre>
+
+<p>
+append() adds a new item at the end of the list.
+</p>
+
+
+<h2>Removing Items</h2>
+
+<pre>
+fruits.remove("Banana")
+</pre>
+
+
+<h2>List Length</h2>
+
+<pre>
+len(fruits)
+</pre>
+
+
+<h2>List Example</h2>
+
+<pre>
+numbers = [10, 20, 30]
+
+for x in numbers:
+    print(x)
+</pre>
+
+
+<h2>Summary</h2>
+
+<ul>
+<li>Lists store multiple values</li>
+<li>Lists use square brackets []</li>
+<li>Lists can be changed</li>
+<li>Lists allow duplicate values</li>
+</ul>
+
+</div>
+
+{% endblock %}
