@@ -60,5 +60,19 @@ def input_output():
 def if_else():
     return render_template('if_else.html')
 
+    @app.route("/conditions")
+def conditions():
+    return render_template("conditions.html")
+
+
+@app.route("/loops")
+def loops():
+    return render_template("loops.html")
+
+
+@app.route("/functions")
+def functions():
+    return render_template("functions.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
