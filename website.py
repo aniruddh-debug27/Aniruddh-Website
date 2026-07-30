@@ -72,7 +72,7 @@ def loops():
 def functions():
     return render_template("functions.html")
 
-@app.route('/lists')
+@app.route('/list')
 def lists():
     return render_template('lists.html')
 
