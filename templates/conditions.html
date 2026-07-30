@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Python Conditions{% endblock %}
+
+{% block content %}
+
+<div class="lesson-container">
+
+<h1>Python Conditions (if, elif, else)</h1>
+
+<p>
+Conditions ka use program mein decision lene ke liye hota hai.
+Python mein mainly <b>if</b>, <b>elif</b> aur <b>else</b> use hote hain.
+</p>
+
+<h2>1. if Statement</h2>
+
+<pre>
+age = 18
+
+if age >= 18:
+    print("You can vote")
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+You can vote
+</pre>
+
+<hr>
+
+<h2>2. if else</h2>
+
+<pre>
+age = 15
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+Minor
+</pre>
+
+<hr>
+
+<h2>3. if elif else</h2>
+
+<pre>
+marks = 75
+
+if marks >= 90:
+    print("Grade A")
+
+elif marks >= 60:
+    print("Grade B")
+
+else:
+    print("Fail")
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+Grade B
+</pre>
+
+</div>
+
+{% endblock %}

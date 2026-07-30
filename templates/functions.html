@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Python Functions{% endblock %}
+
+{% block content %}
+
+<div class="lesson-container">
+
+<h1>Python Functions</h1>
+
+<p>
+Function ek reusable block of code hota hai. Agar ek hi code ko baar-baar use karna ho to Function banaya jata hai.
+</p>
+
+<hr>
+
+<h2>Creating a Function</h2>
+
+<pre>
+def greet():
+    print("Hello World")
+
+greet()
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+Hello World
+</pre>
+
+<hr>
+
+<h2>Function with Parameters</h2>
+
+<pre>
+def greet(name):
+    print("Hello", name)
+
+greet("Aniruddh")
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+Hello Aniruddh
+</pre>
+
+<hr>
+
+<h2>Function with Return Value</h2>
+
+<pre>
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+
+print(result)
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+30
+</pre>
+
+<hr>
+
+<h2>Why Use Functions?</h2>
+
+<ul>
+    <li>Code Reusability</li>
+    <li>Easy to Read</li>
+    <li>Easy to Debug</li>
+    <li>Reduces Repetition</li>
+</ul>
+
+</div>
+
+{% endblock %}

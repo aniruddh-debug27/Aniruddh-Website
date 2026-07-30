@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Python Loops{% endblock %}
+
+{% block content %}
+
+<div class="lesson-container">
+
+<h1>Python Loops</h1>
+
+<p>
+Loop ka use kisi code ko baar-baar execute karne ke liye hota hai.
+Python mein do main loops hote hain:
+</p>
+
+<ul>
+    <li>for Loop</li>
+    <li>while Loop</li>
+</ul>
+
+<hr>
+
+<h2>1. for Loop</h2>
+
+<p>for loop ka use sequence (list, string, range) ke saath hota hai.</p>
+
+<pre>
+for i in range(5):
+    print(i)
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+0
+1
+2
+3
+4
+</pre>
+
+<hr>
+
+<h2>2. while Loop</h2>
+
+<p>while loop tab tak chalta hai jab tak condition True hoti hai.</p>
+
+<pre>
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+</pre>
+
+<h3>Output</h3>
+
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<hr>
+
+<h2>Infinite Loop</h2>
+
+<p>
+Agar condition kabhi False na ho to loop kabhi nahi rukta.
+Isse Infinite Loop kehte hain.
+</p>
+
+<pre>
+while True:
+    print("Hello")
+</pre>
+
+<p><b>Note:</b> Real projects mein Infinite Loop ko carefully use karna chahiye.</p>
+
+</div>
+
+{% endblock %}
