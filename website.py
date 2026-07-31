@@ -74,7 +74,7 @@ def functions():
 
 @app.route("/list")
 def lists():
-    return render_template('lists.html')
+    return render_template("lists.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
