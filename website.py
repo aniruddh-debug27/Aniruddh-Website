@@ -107,5 +107,46 @@ def visitor_info():
 
     return redirect("/")
 
+import sqlite3
+from flask import request, render_template
+
+def init_db():
+    conn = sqlite3.connect("visitors.db")
+    cur = conn.cursor()
+
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS visitors(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        email TEXT,
+        message TEXT
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
+
+init_db()
+
+from flask import redirect
+
+@app.route('/admin')
+def admin():
+
+    conn = sqlite3.connect("visitors.db")
+    cur = conn.cursor()
+
+    cur.execute("SELECT * FROM visitors")
+
+    data = cur.fetchall()
+
+    conn.close()
+
+    return render_template(
+        "admin.html",
+        visitors=data
+    )
+
 if __name__ == "__main__":
     app.run(debug=True)
