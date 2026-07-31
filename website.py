@@ -72,9 +72,9 @@ def loops():
 def functions():
     return render_template("functions.html")
 
-@app.route("/list")
-def lists():
-    return render_template("lists.html")
+@app.route('/list')
+def list_page():
+    return render_template('list.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
