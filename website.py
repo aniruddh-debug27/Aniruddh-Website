@@ -96,5 +96,16 @@ def strings():
 def modules():
     return render_template("modules.html")
 
+@app.route('/visitor-info', methods=['POST'])
+def visitor_info():
+
+    name = request.form['name']
+    email = request.form['email']
+    message = request.form['message']
+
+    print(name,email,message)
+
+    return redirect("/")
+
 if __name__ == "__main__":
     app.run(debug=True)

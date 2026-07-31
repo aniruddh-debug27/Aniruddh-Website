@@ -433,3 +433,57 @@ button:hover {
 .lesson-nav a:hover{
     background:#0097a7;
 }
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+
+.popup-box{
+    background:white;
+    width:350px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+
+.popup-box input,
+.popup-box textarea{
+
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+
+}
+
+
+.popup-box button{
+
+    padding:10px 25px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+
+}
+
+
+.close{
+
+    float:right;
+    font-size:25px;
+    cursor:pointer;
+
+}

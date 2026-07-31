@@ -19,6 +19,40 @@
     </script>
 
 </head>
+<!-- Visitor Popup -->
+<div id="visitorPopup" class="popup">
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Welcome 👋</h2>
+        <p>Please share your details</p>
+
+        <form action="/visitor-info" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="What are you looking for?"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<script>
+function closePopup(){
+    document.getElementById("visitorPopup").style.display="none";
+}
+
+window.onload=function(){
+    document.getElementById("visitorPopup").style.display="flex";
+}
+</script>
 <body>
 
 <nav>
