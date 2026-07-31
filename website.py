@@ -92,5 +92,9 @@ def sets():
 def strings():
     return render_template("strings.html")
 
+@app.route("/modules")
+def modules():
+    return render_template("modules.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

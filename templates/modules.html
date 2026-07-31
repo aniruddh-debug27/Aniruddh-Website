@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="lesson-content">
+
+<h1>Python Modules</h1>
+
+<p class="intro">
+A module is a file that contains Python code such as functions, variables, and classes that you can reuse in other programs.
+</p>
+
+<h2>Import a Module</h2>
+
+<pre><code>import math
+
+print(math.sqrt(25))
+print(math.pi)
+</code></pre>
+
+<h2>Output</h2>
+
+<pre><code>5.0
+3.141592653589793
+</code></pre>
+
+<h2>Import Specific Function</h2>
+
+<pre><code>from math import factorial
+
+print(factorial(5))
+</code></pre>
+
+<h2>Output</h2>
+
+<pre><code>120
+</code></pre>
+
+<h2>Important Points</h2>
+
+<ul>
+<li>Modules help reuse code.</li>
+<li>Use <code>import</code> to load a module.</li>
+<li>You can import the whole module or specific functions.</li>
+<li>Python has many built-in modules like <code>math</code>, <code>random</code>, <code>datetime</code>, and <code>os</code>.</li>
+</ul>
+
+<div class="lesson-nav">
+<a href="/functions">← Previous</a>
+<a href="/file-handling">Next →</a>
+</div>
+
+</div>
+
+{% endblock %}
