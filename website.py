@@ -76,5 +76,9 @@ def functions():
 def list_page():
     return render_template('list.html')
 
+@app.route("/tuples")
+def tuples():
+    return render_template("tuples.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
