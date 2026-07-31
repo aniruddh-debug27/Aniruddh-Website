@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="lesson-content">
+
+<h1>Python Strings</h1>
+
+<p class="intro">
+A string is a sequence of characters enclosed in single or double quotes.
+</p>
+
+<h2>Example</h2>
+
+<pre><code>name = "Aniruddh"
+
+print(name)
+print(name[0])
+print(len(name))
+</code></pre>
+
+<h2>Output</h2>
+
+<pre><code>Aniruddh
+A
+9
+</code></pre>
+
+<h2>Common String Methods</h2>
+
+<pre><code>text = "python"
+
+print(text.upper())
+print(text.lower())
+print(text.capitalize())
+print(text.replace("python","Java"))
+</code></pre>
+
+<h2>Output</h2>
+
+<pre><code>PYTHON
+python
+Python
+Java
+</code></pre>
+
+<h2>Important Points</h2>
+
+<ul>
+    <li>Strings are immutable.</li>
+    <li>Indexing starts from 0.</li>
+    <li>Negative indexing is supported.</li>
+    <li>Many built-in methods are available.</li>
+</ul>
+
+<div class="lesson-nav">
+    <a href="/sets">← Previous</a>
+    <a href="/operators">Next →</a>
+</div>
+
+</div>
+
+{% endblock %}

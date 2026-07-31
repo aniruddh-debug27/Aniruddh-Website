@@ -88,5 +88,9 @@ def dictionary():
 def sets():
     return render_template("sets.html")
 
+@app.route("/strings")
+def strings():
+    return render_template("strings.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
