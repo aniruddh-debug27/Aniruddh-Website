@@ -84,5 +84,9 @@ def tuples():
 def dictionary():
     return render_template("dictionary.html")
 
+@app.route("/sets")
+def sets():
+    return render_template("sets.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
