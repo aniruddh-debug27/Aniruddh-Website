@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Python Dictionaries</h1>
+
+<p>A dictionary stores data in key-value pairs.</p>
+
+<h2>Example</h2>
+
+<pre>
+student = {
+    "name": "Aniruddh",
+    "age": 17,
+    "course": "Python"
+}
+
+print(student)
+print(student["name"])
+</pre>
+
+<h2>Output</h2>
+
+<pre>
+{'name': 'Aniruddh', 'age': 17, 'course': 'Python'}
+Aniruddh
+</pre>
+
+<h2>Important Points</h2>
+
+<ul>
+    <li>Stores data as key-value pairs.</li>
+    <li>Keys must be unique.</li>
+    <li>Values can be duplicated.</li>
+    <li>Dictionaries are mutable (can be changed).</li>
+</ul>
+
+{% endblock %}
