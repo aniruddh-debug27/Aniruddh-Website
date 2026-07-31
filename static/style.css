@@ -381,3 +381,55 @@ button:hover {
 .project-card button {
     margin-top: 15px;
 }
+.lesson-content{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.lesson-content h1,
+.lesson-content h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.lesson-content p{
+    font-size:20px;
+    line-height:1.7;
+}
+
+.lesson-content pre{
+    background:#1e293b;
+    color:#7CFC00;
+    padding:18px;
+    border-radius:10px;
+    overflow-x:auto;
+    font-size:17px;
+}
+
+.lesson-content ul{
+    margin-left:30px;
+}
+
+.lesson-content li{
+    margin:10px 0;
+}
+
+.lesson-nav{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.lesson-nav a{
+    background:#00bcd4;
+    color:white;
+    padding:12px 22px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.lesson-nav a:hover{
+    background:#0097a7;
+}
